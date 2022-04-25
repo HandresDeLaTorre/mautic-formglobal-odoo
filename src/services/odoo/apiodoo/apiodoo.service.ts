@@ -68,7 +68,6 @@ export class ApiodooService {
       return await this.odoo.update('crm.lead', update, {
         priority: '3',
         phone: paramas.phone,
-        email: paramas.email,
         name: paramas.name,
       });
     } catch (err) {
